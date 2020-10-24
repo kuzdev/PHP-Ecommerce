@@ -10,7 +10,7 @@
     <meta content="ThemeDesign" name="author" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <link rel="shortcut icon" href="<?php echo base_url('assets/backend/images/favicon.ico') ?>">
+    <link rel="shortcut icon" href="<?php echo base_url('assets/backend/images/afqoz.png') ?>">
 
 
     <link href="<?php echo base_url('assets/backend/css/bootstrap.min.css') ?>" rel="stylesheet" type="text/css">
@@ -42,7 +42,7 @@
                             <div class="card-body">
 
                                 <h3 class="text-center mt-0 m-b-15">
-                                    <a href="#" class="logo logo-admin"><img src="<?php echo base_url('assets/backend/images/logo-dark.png') ?>"
+                                    <a href="#" class="logo logo-admin"><img src="<?php echo base_url('assets/backend/images/afqoz.png') ?>"
                                             height="30" alt="logo"></a>
                                 </h3>
 

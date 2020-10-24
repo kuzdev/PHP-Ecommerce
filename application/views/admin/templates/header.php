@@ -10,7 +10,7 @@
     <meta content="ThemeDesign" name="author" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <link rel="shortcut icon" href="<?php echo base_url('assets/backend/images/favicon.ico') ?>">
+    <link rel="shortcut icon" href="<?php echo base_url('assets/backend/images/afqoz.png') ?>">
 
     <!-- DataTables -->
     <link href="<?php echo base_url('assets/backend/plugins/datatables/dataTables.bootstrap4.min.css') ?>"
