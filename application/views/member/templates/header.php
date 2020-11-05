@@ -14,8 +14,8 @@ $hal = $this->uri->segment(1);
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="img/favicon.png" rel="icon">
-    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="<?php echo base_url('assets/backend/images/afqoz.png') ?>" rel="icon">
+    <link href="<?php echo base_url('assets/backend/images/afqoz.png') ?>" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link
@@ -40,29 +40,20 @@ $hal = $this->uri->segment(1);
 <!-- style tambahan buat nav mobile -->
 <link rel="shortcut icon" href="<?php echo base_url('assets/backend/images/afqoz.png') ?>">
 <link href="<?php echo base_url('assets/backend/css/icons.css') ?>" rel="stylesheet" type="text/css">
-<!-- <link href="<?php echo base_url('assets/backend/css/style.css') ?>" rel="stylesheet" type="text/css"> -->
+<!-- <script src="<?php echo base_url('assets/backend/js/app.js') ?>"></script> -->
 
 </head>
 <!-- ======= Header ======= -->
 <header id="header" >
 
-    <!-- <div id="topbar">
-        <div class="container">
-            <div class="social-links">
-                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-                <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-            </div>
-        </div>
-    </div> -->
+
    
 
     <div class="container">
     <div class="logo float-left">
             <!-- Uncomment below if you prefer to use an image logo -->
             <h1 class="text-light"><a href="<?php echo base_url() ?>" class="scrollto"><span>AFQOZ+</span></a></h1>
-            <!-- <a href="#header" class="scrollto"><img src="img/logo.png" alt="" class="img-fluid"></a> -->
+            <!-- <a href="<?php echo base_url() ?>" class="scrollto"><img src="<?php echo base_url('assets/backend/images/afqoz.png') ?>" alt="logo Afqoz" class="img-fluid"></a> -->
         </div>
 
         <nav class="main-nav float-right d-none d-lg-block">
@@ -78,7 +69,7 @@ $hal = $this->uri->segment(1);
                 <li class="">
                     <a class="" 
                        data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                        <i class="mdi mdi-shopping noti-icon "></i> Keranjang
+                        <i class="mdi mdi-shopping noti-icon "></i> CHART
                         <!-- <span class="badge badge-success badge-pill noti-icon-badge">3</span> -->
                     </a>
                 </li>
@@ -104,13 +95,13 @@ $hal = $this->uri->segment(1);
 					}else{
 				?>
 				<li class="nav-item">
-					 <a href="<?php echo base_url('login') ?>" class="btn btn-sm btn-primary mr-2 ml-2 mb-1 mt-1" style="color: white;">LOGIN</a></li>
+					 <a href="<?php echo base_url('login') ?>" class="btn btn-sm btn-primary mr-2 ml-2 mb-1 mt-1" style="color: white;">
+                     <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>LogIn</a></li>
 				</li>
 				<?php
 				}
 				?>
                 </li>
-
                 
 
             </ul>

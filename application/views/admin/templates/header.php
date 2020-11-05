@@ -97,7 +97,7 @@
                                 </li>
                                 <li>
                                     <a href="
-                                    <?php echo base_url('admin/artikel/data_artikel') ?>
+                                    <?php echo base_url('admin/Stok') ?>
                                     "class="waves-effect">
                                         <i class="fa fa-plus-square"></i>
                                         <span class="ml-2">Data Stok</span>
@@ -128,30 +128,6 @@
 
                             </ul>
                         </li>
-                        
-
-                        <li class="has_sub">
-                            <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-check-square-o"></i>
-                                <span> Transaski </span> <span class="menu-arrow float-right"><i
-                                        class="mdi mdi-chevron-right"></i></span></a>
-                            <ul class="list-unstyled">
-                                <!-- <li>
-                                    <a href="<?php echo base_url('admin/artikel/buat_artikel') ?>" class="waves-effect">
-                                        <i class="fa fa-shopping-cart"></i>
-                                        <span class="ml-2">Penjualan</span>
-                                    </a>
-                                </li> -->
-                                <li>
-                                    <a href="
-                                    <?php echo base_url('admin/artikel/data_artikel') ?>
-                                    "class="waves-effect">
-                                        <i class="fa fa-plus-square"></i>
-                                        <span class="ml-2">Tambah Stok</span>
-                                    </a>
-                                </li>
-
-                            </ul>
-                        </li>
 
                         <li class="has_sub">
                             <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-external-link-square"></i>
@@ -159,13 +135,13 @@
                                         class="mdi mdi-chevron-right"></i></span></a>
                             <ul class="list-unstyled">
                                 <li>
-                                    <a href="<?php echo base_url('admin/laporan') ?>" class="waves-effect">
+                                    <a href="<?php echo base_url('admin/lapPemesanan') ?>" class="waves-effect">
                                         <i class="mdi mdi-note-plus"></i>
-                                        <span class="ml-2">Laporan Penjualan</span>
+                                        <span class="ml-2">Laporan Pemesanan</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="<?php echo base_url('admin/artikel/data_artikel') ?>" class="waves-effect">
+                                    <a href="<?php echo base_url('admin/laporanLaba') ?>" class="waves-effect">
                                         <i class="mdi mdi-note"></i>
                                         <span class="ml-2">Laporan Laba</span>
                                     </a>

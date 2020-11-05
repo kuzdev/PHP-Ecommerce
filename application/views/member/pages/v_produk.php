@@ -26,7 +26,7 @@
                 <div class="col-md-4 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
                     <div class="box">
                         <div class="card">
-                            <img class="card-img-top" style="width: 100%; height:300px;background-size:cover;"
+                            <img class="card-img-top" style="width: 100%; height:300px; background-size:cover;"
                                 src="<?php echo base_url() . 'uploads/produk/' . $foto_produk; ?>" alt="Foto Produk">
                             <div class="card-body p-3">
                                 <h5 class="card-title mb-1 font-weight-bold" style="font-size: 14px;">

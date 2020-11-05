@@ -1,5 +1,5 @@
 <?php
-class Laporan extends CI_Controller
+class LapPemesanan extends CI_Controller
 {
     function __construct()
     {
@@ -8,14 +8,14 @@ class Laporan extends CI_Controller
             $url = base_url('login');
             redirect($url);
         };
-        $this->load->model('m_laporan');
+        //$this->load->model('m_laporan');
     }
 
     function index()
     {
-        $x['data'] = $this->m_laporan->get_laporan();
+        //$x['data'] = $this->m_laporan->get_laporan();
         $this->load->view('admin/templates/header');
-        $this->load->view('admin/v_laporan', $x);
+        $this->load->view('admin/v_lapPemesanan');
         $this->load->view('admin/templates/footer');
     }
     
