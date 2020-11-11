@@ -27,7 +27,6 @@
     </div>
 </section> <br>
 
-
 <section class="container" >
     <div class="row">
         <div class="col">
@@ -47,7 +46,7 @@
                 </table>
             </div>
 
-            <div>
+            <!-- <div>
                 <div class="">
                 <H6>Belanja Asikk dengerin Prambors!</H6>
                     <table class="elementContainer">
@@ -62,10 +61,7 @@
                         </tr>
                     </table>
                 </div>
-                    <!-- <audio controls="true" autoplay="true" name="media" >
-                    <source src="https://masima.rastream.com/masima-pramborsjakarta" type="audio/mpeg"></audio>
-                    <div class="spinner-grow text-danger" role="status"><span class="sr-only"></span></div> -->
-            </div>
+            </div> -->
         </div>
        
         <div class="col">
@@ -160,24 +156,6 @@
     </div>
 </section> <br>
 
-<!-- <section>
-    <div class="container">
-        <div class="card mb-0" style="max-width: 240px;">
-        <div class="row no-gutters">
-            <div class="col-md-4">
-            <img src="<?php echo base_url('assets/frondend/img/kategori/jaket.jpg') ?>" class="card-img" alt="...">
-            </div>
-            <div class="col-md-8">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-            </div>
-        </div>
-        </div>
-    </div>
-</section> -->
 
     <!-- ======= brands Section ======= -->
 <section id="about-me" class="about-me wow fadeInUp">
@@ -200,7 +178,6 @@
 </section><!-- End brands Section -->
 
 <main id="main">
-
     <!-- ======= Produk Section ======= -->
     <section id="produk" class="produk section-bg">
         <div class="container">
@@ -221,8 +198,8 @@
                     $deskripsi=$i['deskripsi'];
                     $berat_produk=$i['berat_produk'];
                 ?>
-
-                <div class="col-lg-3 col-md-6 gridProduk wow bounceInUp " data-wow-duration="1.4s">
+                        
+                <div class="col  wow bounceInUp " data-wow-duration="1.4s">
                     <div class="box">
                         <div class="card " >
                             <img class="card-img-top fotoproduk" 
@@ -233,8 +210,8 @@
                                 <p class="text-muted mb-0"><small class="font-weight-bold">Kategori: 
                                         <?php echo $id_kategori; ?></small>
                                 </p>
-                                <h4 class="card-text mt-2 mb-2 font-weight-bold" style="color: orange;">Rp.
-                                    <?php echo $harga; ?></h4>
+                                <h5 class="card-text mt-2 mb-2 font-weight-bold" style="color: orange;">Rp.
+                                    <?php echo $harga; ?></h5>
                             </div>
                         </div>
                     </div>

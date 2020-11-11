@@ -324,7 +324,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form action="<?php echo base_url() . 'admin/produk/update'?>" method="post" enctype="multipart/form-data">
+            <form action="<?php echo base_url() . 'admin/produk/apdet'?>" method="post" enctype="multipart/form-data">
                 <div class="modal-body">
 
                     <div class="form-group">

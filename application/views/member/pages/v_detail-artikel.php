@@ -14,7 +14,7 @@
                     <h5 class="display-6 mb-5 font-weight-bold text-center"><?php echo $i->judul_artikel; ?></h5>
                     <div class="card-page text-center">
                                       
-                        <img src="<?php echo base_url() . 'uploads/artikel/'. $i->foto_artikel ?>" class="card-img-top" style="width: 700px;height:400px;object-fit:cover" alt="Foto Artikel">
+                        <img src="<?php echo base_url() . 'uploads/artikel/'. $i->foto_artikel ?>" class="card-img-top" style="width: 100%;height:350px;object-fit:cover" alt="Foto Artikel">
                         <div class="card-body p-0 mt-3 pb-5 text-justify">
                             <p class="justify-content-center text-justify"> <?php echo $this->typography->auto_typography($i->isi_artikel)?></p>
                         </div>

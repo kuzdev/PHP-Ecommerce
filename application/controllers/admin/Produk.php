@@ -104,8 +104,12 @@ class Produk extends CI_Controller
         redirect('admin/produk');
     }
    
-    function update($id_produk) //update
+    function apdet($id_produk) //update
     {
+        $where = array(
+            'id_produk' => $id_produk
+        );
+
         $nama_produk = strip_tags($this->input->post('nama_produk'));
         $id_kategori = strip_tags($this->input->post('id_kategori'));
         $foto_produk = strip_tags($this->input->post('foto_produk'));
@@ -113,7 +117,7 @@ class Produk extends CI_Controller
         $diskon = strip_tags($this->input->post('diskon'));
         $deskripsi = strip_tags($this->input->post('deskripsi'));
         $berat_produk = strip_tags($this->input->post('berat_produk'));
-    
+        
         $data = array(
             'nama_produk' => $nama_produk,
             'id_kategori' => $id_kategori,
@@ -124,9 +128,7 @@ class Produk extends CI_Controller
             'berat_produk'=> $berat_produk
         );
 
-        $where = array(
-            'id_produk' => $id_produk
-        );
+
         $this->m_produk->update_data( $where,$data, 'produk');
         // redirect('admin/produk');
     }

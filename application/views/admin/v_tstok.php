@@ -1,4 +1,3 @@
-
 <div class="page-content-wrapper ">
 
     <div class="container-fluid">
@@ -7,12 +6,12 @@
             <div class="col-sm-12">
                 <div class="float-right page-breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">KPK</a></li>
-                        <li class="breadcrumb-item"><a href="#">Data Member</a></li>
-                        <li class="breadcrumb-item active">Member</li>
+                        <li class="breadcrumb-item"><a href="#">AFQOZ</a></li>
+                        <li class="breadcrumb-item"><a href="#">Data Stok</a></li>
+                        <li class="breadcrumb-item active">Edit</li>
                     </ol>
                 </div>
-                <h5 class="page-title">Member</h5>
+                <h5 class="page-title">Data Stok</h5>
             </div>
         </div>
         <!-- end row -->
@@ -23,7 +22,7 @@
                 <div class="card m-b-30">
                     <div class="card-body">
 
-                        <h4 class="mt-0 header-title">Member</h4>
+                        <h4 class="mt-0 header-title">Data Stok</h4>
                         <p class="text-muted m-b-30 font-14">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aspernatur impedit aliquid,
                             officiis debitis quidem? Earum autem recusandae a dolor doloribus voluptas voluptates enim
@@ -39,31 +38,14 @@
                                         <th class="text-center">No</th>
                                         <th class="text-center">Nama Produk</th>
                                         <th class="text-center">Ukuran</th>
-                                        <th class="text-center">Qty </th>
+                                        <th class="text-center">Qty</th>
                                         <th class="text-center">Aksi </th>
                                     </tr>
                                 </thead>
-
                                 <tbody>
-                                <?php
-                                     $no=1;
-                                    foreach($data as $i) :
-                                            
-                                    ?>
-                                    <tr>
-                                        <th scope="row" class="text-center"><?php echo $no++; ?></th>
-                                            <td><?php echo $i->nama_produk;?></td>
-                                            <td>
-                                                <input type="text" class="form-control" name="ukuran_stok"
-                                                required />
-                                            </td>
-                                            <td>
-                                                <input type="text" class="form-control" name="jumlah_stok"
-                                                required />
-                                            </td>
-                                            <td><button type="submit" class="btn btn-primary">Apdet</button></td> 
-                                    </tr>
-                                <?php endforeach;?>
+
+                                   
+                                 
                                    
                                 </tbody>
                             </table>

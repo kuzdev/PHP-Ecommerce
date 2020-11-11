@@ -13,6 +13,7 @@ a {
 	transition: 0.5s;
 }
 
+
 a:hover,
 a:active,
 a:focus {
@@ -21,9 +22,15 @@ a:focus {
 	text-decoration: none;
 }
 
+#heri {
+	width: 100%;
+	background: url("../../slider/hero-desktop.jpg") center top no-repeat;
+	background-size: cover;
+}
+
 p {
 	padding: 0;
-	margin: 0 0 30px 0;
+	margin: 0 0 15px 0;
 }
 
 h1,
@@ -45,7 +52,7 @@ h6 {
 	overflow-x: auto;
 }
 
-.scroller:: -webkit-scrollbar {
+.scroller::-webkit-scrollbar {
 	width: 0;
 }
 
@@ -226,6 +233,14 @@ h6 {
 }
 
 @media (max-width: 768px) {
+
+	body {
+		background: #fff;
+		color: #444;
+		font-family: "Open Sans", sans-serif;
+		padding-top: 65px;
+	}
+
 	.back-to-top {
 		bottom: 55px;
 	}
@@ -735,15 +750,19 @@ h6 {
 }
 
 
-/* Produk Section
+/* Produk on desktop
 --------------------------------*/
 #produk {
 	padding: 60px 0 40px 0;
+	
+	
 }
 
 #produk .box {
 	/*padding: 30px;
   */
+    
+    width: 250px;
 	position: relative;
 	overflow: hidden;
 	border-radius: 10px;
@@ -862,7 +881,7 @@ h6 {
 /* Artikel Section
 --------------------------------*/
 #artikel {
-	padding: 100px 0;
+	padding: 10px 0;
 	overflow: hidden;
 	background: #f5f8fd;
 }
@@ -906,6 +925,94 @@ h6 {
 	#artikel #artikel-list i {
 		top: 13px;
 	}
+
+	/* produk on mobie */
+	#produk {
+		padding: 60px 0 40px 0;
+	}
+	
+	#produk .col {
+		width: 160px;
+	}
+
+	#produk .box {
+		/*padding: 30px;
+	  */
+	  width: 160px;
+		position: relative;
+		overflow: hidden;
+		border-radius: 10px;
+		margin: 12x 1px 12px 1px;
+		background: #fff;
+		box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+		transition: all 0.3s ease-in-out;
+		text-align: left;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-ms-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+	}
+	
+	.card-box {
+		width: 160px;
+		border-radius: 5px;
+		margin: 5px 0 5px 0;
+		background: #fff;
+		box-shadow: 10px 10px 29px 10px rgba(68, 88, 144, 0.1);
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		-ms-border-radius: 5px;
+		-o-border-radius: 5px;
+	}
+	
+	#produk .box:hover {
+		transform: scale(1.1);
+		cursor: pointer;
+	}
+	
+	#produk .icon {
+		margin: 0 auto 15px auto;
+		padding-top: 12px;
+		display: inline-block;
+		text-align: center;
+		border-radius: 50%;
+		width: 60px;
+		height: 60px;
+	}
+	
+	#produk .icon i {
+		font-size: 36px;
+		line-height: 1;
+	}
+
+	#produk .fotoproduk{
+		width: 100%;
+		height: auto;
+		background-size:cover;
+	
+	}
+	
+	#produk .title {
+		font-weight: 700;
+		margin-bottom: 15px;
+		font-size: 18px;
+	}
+	
+	#produk .title a {
+		color: #111;
+	}
+	
+	#produk .box:hover .title a {
+		color: #1bb1dc;
+	}
+	
+	#produk .description {
+		font-size: 14px;
+		line-height: 28px;
+		margin-bottom: 0;
+		text-align: left;
+	}
+
 }
 
 #artikel #artikel-list a.collapse {
