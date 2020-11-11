@@ -61,7 +61,7 @@
                                        foreach($data->result_array() as $i):
                                            $id_produk=$i['id_produk'];
                                            $nama_produk=$i['nama_produk'];
-                                           $id_kategori=$i['nama_kategori'];
+                                           $nama_kategori=$i['nama_kategori'];
                                            $foto_produk=$i['foto_produk'];
                                            $harga=$i['harga'];
                                            $diskon=$i['diskon'];
@@ -71,7 +71,7 @@
                                         <tr>
                                             <th class="text-center" scope="row"><?php echo $no++; ?></th>
                                             <td class="text-center"><?php echo $nama_produk;?></td>
-                                            <td class="text-center"><?php echo $id_kategori;?></td>
+                                            <td class="text-center"><?php echo $nama_kategori;?></td>
                                             <td class="text-center"><?php echo $foto_produk;?></td>
                                             <!-- <td class="text-center"><img src="<?php echo base_url().'/uploads/produk/'.$i->foto_produk?>"></td> -->
                                             <td class="text-center"><?php echo $harga;?></td>
@@ -247,7 +247,7 @@
      foreach($data->result_array() as $i):
         $id_produk=$i['id_produk'];
         $nama_produk=$i['nama_produk'];
-        $id_kategori=$i['id_kategori'];
+        $nama_kategori=$i['nama_kategori'];
         $foto_produk=$i['foto_produk'];
         $harga=$i['harga'];
         $diskon=$i['diskon'];
@@ -267,28 +267,44 @@
                 </button>
             </div>
             <div class="modal-body">
-                
-            <div class="text-center">
-                    <img class="img-fluid w-50 h-50" alt="100x100"
-                        src="<?php echo base_url() . 'uploads/artikel/'. $foto_produk; ?>" data-holder-rendered="true">
-                       
-                </div>
-            
-                <div class="mt-4 mb-4 ml-4">
-                    <input type="hidden" name="id_kriteria" value="<?php echo $id_produk;?>" />
+
+                    <div class="form-group">
+                        <label>Nama Produk : </label>
+                        <label><?php echo $nama_produk;?></label>
+                    </div>
+                    <div class="form-group">
+                        <label>Kategori : </label>
+                        <label><?php echo $nama_kategori;?></label>
+                    </div>
+                    <div class="form-group">
+                        <label>Harga : </label>
+                        <label><?php echo $harga;?></label>
+                    </div>
+                    <div class="form-group">
+                        <label>Diskon : </label>
+                        <label><?php echo $diskon;?></label>
+                    </div>
+                    <div class="form-group">
+                        <label>Deskripsi : </label>
+                        <label><?php echo $deskripsi;?></label>
+                    </div>
+                    <div class="form-group">
+                        <label>Berat Produk : </label>
+                        <label><?php echo $berat_produk;?> Kg</label>
+                    </div>
+                    <div class="form-group">
+                        <label>Gambar Produk : </label>
+                        <div class="col-lg-6 col-md-6 col-xs-6 w-25 h-25">
+                            <img class="img-thumbnail w-75 h-75"
+                            src="<?php echo base_url() . 'uploads/produk/'. $foto_produk;?>">
+                        </div>
+                    </div>
                     
-                    <h5 class="text-center"><?php echo $nama_produk; ?></h5>
+                    
+                    </div>
+                   
+                    
                 </div>
-
-
-                <div class="m-4">
-                    <?php echo $this->typography->auto_typography($isi_artikel)?>
-                </div>
-
-
-
-
-            </div>
             <div class="modal-footer">
                 <button type="button" class="btn" data-dismiss="modal" aria-hidden="true">Tutup</button>
             </div>
