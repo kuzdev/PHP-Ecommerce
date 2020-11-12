@@ -2,6 +2,9 @@
 
 <section id="artikel">
     <div class="container" style="padding-top: 30px;">
+        <header>
+        <h5>Artkel</h5>
+        </header>
         <div class="row">
         <?php
         foreach ($data->result_array() as $i) :

@@ -192,27 +192,6 @@
                             </ul>
                         </li>
 
-                        <!-- <li>
-                            <a href="<?php echo base_url().'admin/kriteria'?>" class="waves-effect">
-                                <i class="dripicons-document"></i>
-                                <span> Data Kriteria </span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="<?php echo base_url('admin/subkriteria') ?>" class="waves-effect">
-                                <i class="mdi mdi-format-list-bulleted"></i>
-                                <span> Nilai Subkriteria </span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="<?php echo base_url('admin/alternatif') ?>" class="waves-effect">
-                                <i class="mdi mdi-database"></i>
-                                <span> Data Alternatif </span>
-                            </a>
-                        </li> -->
-
                         <li>
                             <a href="<?php echo base_url('admin/member') ?>" class="waves-effect">
                                 <i class="mdi mdi-account-multiple"></i>
@@ -220,12 +199,12 @@
                             </a>
                         </li>
 
-                        <li>
+                        <!-- <li>
                             <a href="<?php echo base_url('slider') ?>" class="waves-effect">
                                 <i class="mdi mdi-account-multiple"></i>
                                 <span> Atur Slider </span>
                             </a>
-                        </li>
+                        </li> -->
 
                         <li>
                             <a href="<?php echo base_url('admin/rangking') ?>" class="waves-effect">
@@ -233,12 +212,6 @@
                                 <span> Rangking Produk </span>
                             </a>
                         </li>
-                        <!-- <li>
-                           <a href="#" class="waves-effect">
-                            <i class="fa fa-cogs"></i>
-                             <span>Atur User</span></a>
-                        </li> -->
-                       
 
                     </ul>
                 </div>
@@ -248,7 +221,6 @@
         <!-- Left Sidebar End -->
 
         <!-- Start right Content here -->
-
         <div class="content-page">
             <!-- Start content -->
             <div class="content">
@@ -266,10 +238,7 @@
                     </div>
 
                     <nav class="navbar-custom">
-
                         <ul class="list-inline float-right mb-0">
-
-
                             <li class="list-inline-item dropdown notification-list">
                                 <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown"
                                     href="#" role="button" aria-haspopup="false" aria-expanded="false">
@@ -282,10 +251,7 @@
                                         <span class="badge badge-danger float-right">84</span>
                                         <h5>Notification</h5>
                                     </div>
-
                                     <div class="slimscroll" style="max-height: 230px;">
-
-                                        
                                         <a href="javascript:void(0);" class="dropdown-item notify-item">
                                             <div class="notify-icon bg-primary"><i class="mdi mdi-cart-outline"></i>
                                             </div>
@@ -353,16 +319,10 @@
                                                 class="mdi mdi-logout m-r-5 text-muted"></i>
                                             Logout</a>
                                     </div>
-
-
-
                                 </div>
                             </li>
-
                         </ul>
-
                         <div class="clearfix"></div>
-
                     </nav>
 
                 </div>
@@ -465,7 +425,7 @@
                                         <!-- <div class="dropdown-item">
                                             <a class="text-dark" href="#"><i class="mdi mdi-account-circle m-r-5 text-muted"></i> Profile</a>
                                         </div> -->
-
+                                        
                                         <div class="dropdown-item">
                                             <a class="text-dark" href="<?=site_url('login/logout')?>"><i
                                                     class="mdi mdi-logout m-r-5 text-muted"></i>
