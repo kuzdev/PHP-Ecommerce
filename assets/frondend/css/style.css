@@ -5,13 +5,14 @@ body {
 	background: #fff;
 	color: #444;
 	font-family: "Open Sans", sans-serif;
-	padding-top: 80px;
+	padding-top: 70px;
 }
 
 a {
 	color: #1bb1dc;
 	transition: 0.5s;
 }
+
 
 a:hover,
 a:active,
@@ -21,9 +22,15 @@ a:focus {
 	text-decoration: none;
 }
 
+#heri {
+	width: 100%;
+	background: url("../../slider/hero-desktop.jpg") center top no-repeat;
+	background-size: cover;
+}
+
 p {
 	padding: 0;
-	margin: 0 0 30px 0;
+	margin: 0 0 15px 0;
 }
 
 h1,
@@ -34,10 +41,171 @@ h5,
 h6 {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 400;
-	margin: 0 0 20px 0;
+	margin: 0 0 10px 0;
 	padding: 0;
 }
 
+.scroller {
+	max-height: 180px;
+	border: 0px solid transparent;
+	display: flex;
+	overflow-x: auto;
+}
+
+.scroller::-webkit-scrollbar {
+	width: 0;
+}
+
+.scroller .scrhol {
+	min-width: 350px;
+	height: 100px;
+	line-height: 50px;
+	text-align: center;
+	background-color: #ddd;
+	margin-right: 10px;
+    border-radius: 7px;
+}
+
+.boradius{
+	border-radius: 10px;
+}
+
+.fotoproduk{
+	width: 100%;
+	height:210px;
+	background-size:cover;
+
+}
+
+.boxContainer{
+	margin-top: 5px;
+	margin-bottom: 10px;
+	position: relative;
+	width: 100%;
+	height: 42px;
+	border: 1px solid silver;
+	padding: 0px 10px;
+	border-radius: 50px;
+}
+
+.putihtxt{
+	color: #fff;
+}
+
+.hitamtxt{
+	color: black;
+}
+
+.elementContainer{
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.search{
+	border: none;
+	width: 100%;
+	height: 100%;
+	padding: 0px 5px;
+	border-radius: 50px;
+	font-size: 14px;
+	color: #424242;
+
+}
+
+.search:focus{
+	outline: none;
+}
+
+.material-icons{
+	font-size: 26;
+	color: #4989b9;
+}
+
+.scroller .kategori{
+	min-width: 140px;
+	height: 140px;
+	line-height: 70px;
+	text-align: center;
+	background-color: #ddd;
+	margin-right: 10px;
+    border-radius: 7px;
+}
+
+.fokat{
+	width: 140px;
+}
+
+.outer{
+	border: 1px solid rgba(0,0,0,.125);
+}
+
+
+.pre {
+	text-align: center;
+	padding-top: 50%;
+	position: relative;
+	color: #212121;
+	font-size: 41px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	border-bottom: 14px solid #212121;
+  }
+  
+  .pre:before {
+	text-align: center;
+	padding-top: 50%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: "";
+	color: black;
+	border-bottom: 14px solid #00ffff;
+	overflow: hidden;
+	animation: loading 0.9s infinite linear;
+  }
+  
+  @keyframes loading {
+	0% {
+	  width: 0%;
+	}
+	100% {
+	  width: 100%;
+	}
+  }
+
+.judul{
+	padding-bottom: 5px;
+	color: red;
+}
+
+
+.menuBawah{
+	position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.mwenu {
+    padding: 8px 0px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(49, 53, 59, 0.68);
+    text-decoration: initial;
+    white-space: nowrap;
+}
 /* li pada nav button */
 
 
@@ -65,11 +233,38 @@ h6 {
 }
 
 @media (max-width: 768px) {
+
+	body {
+		background: #fff;
+		color: #444;
+		font-family: "Open Sans", sans-serif;
+		padding-top: 65px;
+	}
+
 	.back-to-top {
-		bottom: 15px;
+		bottom: 55px;
 	}
 }
 
+.scroller .kategori{
+	min-width: 100px;
+	height: 100px;
+	line-height: 50px;
+	text-align: center;
+	background-color: #ddd;
+	margin-right: 10px;
+    border-radius: 7px;
+}
+
+.card-medi{
+	min-width: 150px;
+	height: 150px;
+	line-height: 75px;
+	text-align: center;
+	background-color: #ddd;
+	margin-right: 10px;
+    border-radius: 7px;
+}
 /* Prelaoder */
 #preloader {
 	position: fixed;
@@ -154,11 +349,11 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-	height: 110px;
+	height: 80px;
 	transition: all 0.5s;
 	z-index: 997;
 	transition: all 0.5s;
-	padding: 20px 0;
+	padding: 10px 0;
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -169,8 +364,8 @@ h6 {
 
 #header.header-scrolled,
 #header.header-pages {
-	height: 70px;
-	padding: 15px 0;
+	height: 60px;
+	padding: 10px 0;
 	background-color: #fff;
 	box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
 }
@@ -182,8 +377,8 @@ h6 {
 
 @media (max-width: 991px) {
 	#header {
-		height: 70px;
-		padding: 15px 0;
+		height: 60px;
+		padding: 10px 0;
 	}
 }
 
@@ -196,6 +391,8 @@ h6 {
 	letter-spacing: 3px;
 	text-transform: uppercase;
 }
+
+
 
 @media (max-width: 991px) {
 	#header .logo h1 {
@@ -553,15 +750,19 @@ h6 {
 }
 
 
-/* Produk Section
+/* Produk on desktop
 --------------------------------*/
 #produk {
 	padding: 60px 0 40px 0;
+	
+	
 }
 
 #produk .box {
 	/*padding: 30px;
   */
+    
+    width: 250px;
 	position: relative;
 	overflow: hidden;
 	border-radius: 10px;
@@ -680,7 +881,7 @@ h6 {
 /* Artikel Section
 --------------------------------*/
 #artikel {
-	padding: 100px 0;
+	padding: 10px 0;
 	overflow: hidden;
 	background: #f5f8fd;
 }
@@ -724,6 +925,94 @@ h6 {
 	#artikel #artikel-list i {
 		top: 13px;
 	}
+
+	/* produk on mobie */
+	#produk {
+		padding: 60px 0 40px 0;
+	}
+	
+	#produk .col {
+		width: 160px;
+	}
+
+	#produk .box {
+		/*padding: 30px;
+	  */
+	  width: 160px;
+		position: relative;
+		overflow: hidden;
+		border-radius: 10px;
+		margin: 12x 1px 12px 1px;
+		background: #fff;
+		box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+		transition: all 0.3s ease-in-out;
+		text-align: left;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-ms-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+	}
+	
+	.card-box {
+		width: 160px;
+		border-radius: 5px;
+		margin: 5px 0 5px 0;
+		background: #fff;
+		box-shadow: 10px 10px 29px 10px rgba(68, 88, 144, 0.1);
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		-ms-border-radius: 5px;
+		-o-border-radius: 5px;
+	}
+	
+	#produk .box:hover {
+		transform: scale(1.1);
+		cursor: pointer;
+	}
+	
+	#produk .icon {
+		margin: 0 auto 15px auto;
+		padding-top: 12px;
+		display: inline-block;
+		text-align: center;
+		border-radius: 50%;
+		width: 60px;
+		height: 60px;
+	}
+	
+	#produk .icon i {
+		font-size: 36px;
+		line-height: 1;
+	}
+
+	#produk .fotoproduk{
+		width: 100%;
+		height: auto;
+		background-size:cover;
+	
+	}
+	
+	#produk .title {
+		font-weight: 700;
+		margin-bottom: 15px;
+		font-size: 18px;
+	}
+	
+	#produk .title a {
+		color: #111;
+	}
+	
+	#produk .box:hover .title a {
+		color: #1bb1dc;
+	}
+	
+	#produk .description {
+		font-size: 14px;
+		line-height: 28px;
+		margin-bottom: 0;
+		text-align: left;
+	}
+
 }
 
 #artikel #artikel-list a.collapse {

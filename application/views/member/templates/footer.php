@@ -1,38 +1,10 @@
-<style>
-  mwenu {
-    padding: 8px 0px;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    flex-flow: column nowrap;
-    justify-content: space-around;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 16px;
-    color: rgba(49, 53, 59, 0.68);
-    text-decoration: initial;
-    white-space: nowrap;
-}
-</style>
 
-<!-- <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a> -->
-<!-- ======= Footer ======= -->
-<!-- <footer id="footer" class="section-bg bg-dark">
-    <div class="container">
-        <div class="copyright" style="color: #fff;">
-            &copy; Copyright <strong>AFQOZ+</strong>. All Rights Reserved
-        </div>
-        <div class="credits" style="color: #fff;">
-
-            Created by <a href="https://linkedin.com/in/kusno-ryd/">Kusno Riyadi</a>
-        </div>
-    </div>
-</footer> <br><br> -->
-<!-- End  Footer -->
-
+<footer>
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+</footer>
 
  <!-- Bottom Navbar -->
- <nav class="navbar navbar-light bg-light  navbar-expand fixed-bottom d-md-none d-lg-none d-xl-none">
+ <nav class="menBawah navbar-light bg-light  navbar-expand fixed-bottom d-md-none d-lg-none d-xl-none">
     <ul class="navbar-nav nav-justified w-100">
       <li class="nav-item">
         <a href="<?php echo base_url('member/beranda') ?>" class="nav-link mwenu">
@@ -47,7 +19,7 @@
           <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             
 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><style>.cls-1{fill:#525a67}</style></defs><path class="cls-1" d="M20 2H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM4 20V4h16v16z"/><path class="cls-1" d="M14.71 8.29a1 1 0 0 0-1.42 0L11 10.59l-1.29-1.3a1 1 0 0 0-1.42 0l-3 3a1 1 0 0 0 1.42 1.42L9 11.41l1.29 1.3a1 1 0 0 0 1.42 0l2.29-2.3 3.29 3.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42zM17 16H7a1 1 0 0 0 0 2h10a1 1 0 0 0 0-2z"/><path fill="none" d="M0 0h24v24H0z"/></svg>
-          </svg> Feed
+          </svg> Feeds
         </a>
       </li>
       <li class="nav-item">

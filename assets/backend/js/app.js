@@ -23,15 +23,15 @@
             color: '#9ea5ab'
         });
     },
-    MainApp.prototype.initSlimscroll = function () {
-        $('.slimscroll').slimscroll({
-            height: 'auto',
-            position: 'right',
-            size: "5px",
-            color: '#9ea5ab',
-            touchScrollStep: 50
-        });
-    },
+        MainApp.prototype.initSlimscroll = function () {
+            $('.slimscroll').slimscroll({
+                height: 'auto',
+                position: 'right',
+                size: "5px",
+                color: '#9ea5ab',
+                touchScrollStep: 50
+            });
+        },
         //left menu
         MainApp.prototype.initLeftMenuCollapse = function () {
             var $this = this;
@@ -47,7 +47,7 @@
             $('[data-toggle="tooltip"]').tooltip();
             $('[data-toggle="popover"]').popover();
         },
-        
+
         //full screen
         MainApp.prototype.initMenu = function () {
             var $this = this;
@@ -59,7 +59,7 @@
                     if (sub.is(':visible')) {
                         sub.slideUp(300, function () {
                             parent.removeClass('nav-active');
-                            $('.body-content').css({height: ''});
+                            $('.body-content').css({ height: '' });
                             adjustMainContentHeight();
                         });
                     } else {
@@ -105,10 +105,10 @@
             });
         },
         MainApp.prototype.Preloader = function () {
-            $(window).on('load', function() {
+            $(window).on('load', function () {
                 $('#status').fadeOut();
-                $('#preloader').delay(350).fadeOut('slow');
-                $('body').delay(350).css({
+                $('#preloader').delay(30).fadeOut('slow');
+                $('body').delay(30).css({
                     'overflow': 'visible'
                 });
             });
@@ -126,7 +126,7 @@
         $.MainApp = new MainApp, $.MainApp.Constructor = MainApp
 }(window.jQuery),
 
-//initializing
+    //initializing
     function ($) {
         "use strict";
         $.MainApp.init();

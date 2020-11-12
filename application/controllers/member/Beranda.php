@@ -17,7 +17,6 @@ class Beranda extends CI_Controller
                 $x['query'] = $this->m_artikel->get_artikel_page();
                 $this->load->view('member/templates/header');
                 $this->load->view('member/pages/v_beranda', $x);
-                $this->load->view('member/templates/menuBar');
                 $this->load->view('member/templates/footer');
         }
         

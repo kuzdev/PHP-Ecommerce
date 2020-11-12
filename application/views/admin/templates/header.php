@@ -10,7 +10,7 @@
     <meta content="ThemeDesign" name="author" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <link rel="shortcut icon" href="<?php echo base_url('assets/backend/images/favicon.ico') ?>">
+    <link rel="shortcut icon" href="<?php echo base_url('assets/backend/images/afqoz.png') ?>">
 
     <!-- DataTables -->
     <link href="<?php echo base_url('assets/backend/plugins/datatables/dataTables.bootstrap4.min.css') ?>"
@@ -97,7 +97,7 @@
                                 </li>
                                 <li>
                                     <a href="
-                                    <?php echo base_url('admin/artikel/data_artikel') ?>
+                                    <?php echo base_url('admin/Stok') ?>
                                     "class="waves-effect">
                                         <i class="fa fa-plus-square"></i>
                                         <span class="ml-2">Data Stok</span>
@@ -128,30 +128,6 @@
 
                             </ul>
                         </li>
-                        
-
-                        <li class="has_sub">
-                            <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-check-square-o"></i>
-                                <span> Transaski </span> <span class="menu-arrow float-right"><i
-                                        class="mdi mdi-chevron-right"></i></span></a>
-                            <ul class="list-unstyled">
-                                <!-- <li>
-                                    <a href="<?php echo base_url('admin/artikel/buat_artikel') ?>" class="waves-effect">
-                                        <i class="fa fa-shopping-cart"></i>
-                                        <span class="ml-2">Penjualan</span>
-                                    </a>
-                                </li> -->
-                                <li>
-                                    <a href="
-                                    <?php echo base_url('admin/artikel/data_artikel') ?>
-                                    "class="waves-effect">
-                                        <i class="fa fa-plus-square"></i>
-                                        <span class="ml-2">Tambah Stok</span>
-                                    </a>
-                                </li>
-
-                            </ul>
-                        </li>
 
                         <li class="has_sub">
                             <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-external-link-square"></i>
@@ -159,13 +135,13 @@
                                         class="mdi mdi-chevron-right"></i></span></a>
                             <ul class="list-unstyled">
                                 <li>
-                                    <a href="<?php echo base_url('admin/laporan') ?>" class="waves-effect">
+                                    <a href="<?php echo base_url('admin/lapPemesanan') ?>" class="waves-effect">
                                         <i class="mdi mdi-note-plus"></i>
-                                        <span class="ml-2">Laporan Penjualan</span>
+                                        <span class="ml-2">Laporan Pemesanan</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="<?php echo base_url('admin/artikel/data_artikel') ?>" class="waves-effect">
+                                    <a href="<?php echo base_url('admin/laporanLaba') ?>" class="waves-effect">
                                         <i class="mdi mdi-note"></i>
                                         <span class="ml-2">Laporan Laba</span>
                                     </a>
@@ -216,27 +192,6 @@
                             </ul>
                         </li>
 
-                        <!-- <li>
-                            <a href="<?php echo base_url().'admin/kriteria'?>" class="waves-effect">
-                                <i class="dripicons-document"></i>
-                                <span> Data Kriteria </span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="<?php echo base_url('admin/subkriteria') ?>" class="waves-effect">
-                                <i class="mdi mdi-format-list-bulleted"></i>
-                                <span> Nilai Subkriteria </span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="<?php echo base_url('admin/alternatif') ?>" class="waves-effect">
-                                <i class="mdi mdi-database"></i>
-                                <span> Data Alternatif </span>
-                            </a>
-                        </li> -->
-
                         <li>
                             <a href="<?php echo base_url('admin/member') ?>" class="waves-effect">
                                 <i class="mdi mdi-account-multiple"></i>
@@ -244,12 +199,12 @@
                             </a>
                         </li>
 
-                        <li>
+                        <!-- <li>
                             <a href="<?php echo base_url('slider') ?>" class="waves-effect">
                                 <i class="mdi mdi-account-multiple"></i>
                                 <span> Atur Slider </span>
                             </a>
-                        </li>
+                        </li> -->
 
                         <li>
                             <a href="<?php echo base_url('admin/rangking') ?>" class="waves-effect">
@@ -257,12 +212,6 @@
                                 <span> Rangking Produk </span>
                             </a>
                         </li>
-                        <!-- <li>
-                           <a href="#" class="waves-effect">
-                            <i class="fa fa-cogs"></i>
-                             <span>Atur User</span></a>
-                        </li> -->
-                       
 
                     </ul>
                 </div>
@@ -272,7 +221,6 @@
         <!-- Left Sidebar End -->
 
         <!-- Start right Content here -->
-
         <div class="content-page">
             <!-- Start content -->
             <div class="content">
@@ -290,10 +238,7 @@
                     </div>
 
                     <nav class="navbar-custom">
-
                         <ul class="list-inline float-right mb-0">
-
-
                             <li class="list-inline-item dropdown notification-list">
                                 <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown"
                                     href="#" role="button" aria-haspopup="false" aria-expanded="false">
@@ -306,10 +251,7 @@
                                         <span class="badge badge-danger float-right">84</span>
                                         <h5>Notification</h5>
                                     </div>
-
                                     <div class="slimscroll" style="max-height: 230px;">
-
-                                        
                                         <a href="javascript:void(0);" class="dropdown-item notify-item">
                                             <div class="notify-icon bg-primary"><i class="mdi mdi-cart-outline"></i>
                                             </div>
@@ -377,16 +319,10 @@
                                                 class="mdi mdi-logout m-r-5 text-muted"></i>
                                             Logout</a>
                                     </div>
-
-
-
                                 </div>
                             </li>
-
                         </ul>
-
                         <div class="clearfix"></div>
-
                     </nav>
 
                 </div>
@@ -489,7 +425,7 @@
                                         <!-- <div class="dropdown-item">
                                             <a class="text-dark" href="#"><i class="mdi mdi-account-circle m-r-5 text-muted"></i> Profile</a>
                                         </div> -->
-
+                                        
                                         <div class="dropdown-item">
                                             <a class="text-dark" href="<?=site_url('login/logout')?>"><i
                                                     class="mdi mdi-logout m-r-5 text-muted"></i>

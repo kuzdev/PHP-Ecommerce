@@ -123,7 +123,7 @@ class Artikel extends CI_Controller
                 $data = array(
                     'judul_artikel'     => $judul_artikel,
                     'isi_artikel'     => $isi_artikel,
-                    'foto_rtikel'    => $foto_artikel
+                    'foto_artikel'    => $foto_artikel
                 );
 
                 $where = array(
