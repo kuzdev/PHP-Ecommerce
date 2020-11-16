@@ -25,7 +25,8 @@
                 ?>
                 <div class="col-md-4 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
                     <div class="box">
-                        <div class="card">
+                    <a href="<?= base_url('member/produk/detail_produk/'. $id_produk)?>">
+                        <div class="card" >
                             <img class="card-img-top" style="width: 100%; height:300px; background-size:cover;"
                                 src="<?php echo base_url() . 'uploads/produk/' . $foto_produk; ?>" alt="Foto Produk">
                             <div class="card-body p-3">
@@ -34,9 +35,8 @@
                                 <p class="text-muted mb-0"><small class="font-weight-bold">Kategori: 
                                         <?php echo $id_kategori; ?> <?php echo $berat_produk; ?>kg</small>
                                 </p>
-                                <h4 class="card-text mt-2 mb-2 font-weight-bold" style="color: orange;">Rp.
-                                    <?php echo $harga; ?></h4>
-
+                                 <h4 class="card-text mt-2 mb-2 font-weight-bold" style="color: orange;">Rp.
+                                    <?php echo $harga; ?> </h4>
                                 <div class="row pt-1 pb-1 mb-2" style=" color: black;">
                                     <div class="col-md-6 col-sm-6 col-xs-6 col-6 pr-0">
                                         <h6 class="card-text mb-0" style="color: black;">Luas :
@@ -51,6 +51,7 @@
                             </div>
                         </div>
                     </div>
+                    </a>
                 </div>
                 <?php endforeach; ?>
             </div>

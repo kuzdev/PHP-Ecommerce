@@ -127,8 +127,6 @@ class Produk extends CI_Controller
             'deskripsi'   => $deskripsi,
             'berat_produk'=> $berat_produk
         );
-
-
         $this->m_produk->update_data( $where,$data, 'produk');
         // redirect('admin/produk');
     }

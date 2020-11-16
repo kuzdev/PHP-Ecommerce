@@ -126,7 +126,23 @@
             <h6><b>Paling laku gaiis!!</b></h6>
         </header>
         <div class=" scroller boradius">
-            <div class="card-medi">
+            <?php
+                foreach ($data->result_array() as $i) :
+                    $id_produk=$i['id_produk'];
+                    $nama_produk=$i['nama_produk'];
+                    $foto_produk=$i['foto_produk'];
+            ?>
+            <div class=" ">
+                <div class="card card-medi">
+                    <img src="<?php echo base_url() . 'uploads/produk/' . $foto_produk; ?>" class=" w-100 fokat boradius">
+                </div>
+                <div class="card-body p-1">
+                    <h5 class="card-title mb-1 font-weight-bold" style="font-size: 14px;"><b>
+                    <?php echo word_limiter($nama_produk, 10); ?></b></h5>
+                </div>
+            </div>
+
+            <!-- <div class="card-medi">
                 <img src="<?php echo base_url('assets/frondend/img/kategori/jaket.jpg') ?>" class=" w-100 fokat boradius" >
             </div>
             <div class="card-medi">
@@ -152,7 +168,9 @@
             </div>
             <div class="card-medi">
                 <img src="<?php echo base_url('assets/frondend/img/kategori/kaos3.jpg') ?>" class=" w-100 boradius" >
-            </div>
+            </div> -->
+        <?php endforeach; ?>
+
     </div>
 </section> <br>
 
@@ -201,7 +219,7 @@
                         
                 <div class="col  wow bounceInUp " data-wow-duration="1.4s">
                     <div class="box">
-                        <div class="card " >
+                        <div class="card ">
                             <img class="card-img-top fotoproduk" 
                                 src="<?php echo base_url() . 'uploads/produk/' . $foto_produk; ?>" alt="Foto Produk">
                             <div class="card-body p-3">
@@ -253,3 +271,4 @@
     </section><!-- End F.A.Q Section -->
 
 </main><!-- End #main -->
+<br>

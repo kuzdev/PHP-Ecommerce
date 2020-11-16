@@ -1,4 +1,7 @@
 
+<link rel="stylesheet" href="<?php echo base_url('assets/frondend/js/cart.js')?>">
+
+
 <footer>
 <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 </footer>
@@ -31,7 +34,8 @@
         </a>
       </li>
       <li class="nav-item">
-        <a href="<?php echo base_url('member/keranjang') ?>" class="nav-link mwenu">
+        <a data-fsc-item-path-value="base" data-fsc-item-path="base" 
+                    data-fsc-addthis="base" data-fsc-cart="Right" class="nav-link mwenu btn">
           <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-heart" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
           <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><style>.cls-1{fill:#525a67}</style></defs><path class="cls-1" d="M22.44 3.71A2 2 0 0 0 20.91 3H6.27a2 2 0 0 0-.85.19l-.17-.67A2 2 0 0 0 3.31 1H2.09a1 1 0 0 0 0 2h1.22l1.8 7.21.89 5.12A2 2 0 0 0 8 17h11.3a2 2 0 0 0 2-1.67l1.66-10a2 2 0 0 0-.52-1.62zM19.24 15H7.94L6.27 5h14.64z"/><circle class="cls-1" cx="9.59" cy="21" r="2"/><circle class="cls-1" cx="17.59" cy="21" r="2"/><path fill="none" d="M0 0h24v24H0z"/></svg>
           </svg> Chart
@@ -46,8 +50,6 @@
       </li>
     </ul>
   </nav>
-
-
 
  
   
@@ -69,6 +71,23 @@
 <!-- Template Main JS File -->
 <script src="<?php echo base_url('assets/frondend/js/main.js')?>"></script>
 <script src="<?php echo base_url('assets/frondend/js/script.js')?>"></script>
+<script src="<?php echo base_url('assets/frondend/js/cart.js')?>"></script>
+
+<script src="<?php echo base_url('assets/frondend/js/jquery.prettyPhoto.js')?>"></script>
+<script type="text/javascript">
+    //pretty Photo
+    $("a[data-rel='prettyPhoto']").prettyPhoto({
+        animation_speed: 'normal',
+        slideshow: 5000,
+        autoplay_slideshow: false,
+        opacity: .3,
+        theme:'light_rounded'
+
+        /* light_rounded / dark_rounded / light_square / dark_square / facebook */
+    });
+</script>
+
+
 
 </body>
 

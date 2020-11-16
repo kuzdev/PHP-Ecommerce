@@ -10,19 +10,14 @@ class Stok extends CI_Controller
         };
         $this->load->model('M_Stok');
     }
-
     function index(){
 
-        $x['data'] = $this->M_Stok->cari()->result();
-        // echo "</pre>";
-        // print_r($x);
-        // echo "</pre>";
+        $x['data'] = $this->M_Stok->cari();
 
-//        print_r($x);
         $this->load->view('admin/templates/header');
         $this->load->view('admin/v_stok', $x);
         $this->load->view('admin/templates/footer');
-    }   
+    }  
 
     
 

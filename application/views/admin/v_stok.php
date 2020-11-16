@@ -37,6 +37,7 @@
                                 <thead>
                                     <tr>
                                         <th class="text-center">No</th>
+                                        
                                         <th class="text-center">Nama Produk</th>
                                         <th class="text-center">Ukuran</th>
                                         <th class="text-center">Qty </th>
@@ -46,19 +47,23 @@
 
                                 <tbody>
                                 <?php
-                                     $no=1;
-                                    foreach($data as $i) :
-                                            
-                                    ?>
+                                    $no=1;
+                                       foreach($data->result_array() as $i):
+                                           
+                                           $id_produk =$i['nama_produk'];
+                                           $ukuran_stok=$i['ukuran_stok'];
+                                           $jumlah_stok=$i['jumlah_stok'];
+                                   ?>
                                     <tr>
                                         <th scope="row" class="text-center"><?php echo $no++; ?></th>
-                                            <td><?php echo $i->nama_produk;?></td>
+                                        
+                                            <td><?php echo $id_produk;?></td>
                                             <td>
-                                                <input type="text" class="form-control" name="ukuran_stok"
+                                                <input type="text" class="form-control text-center" name="ukuran_stok" value="<?php echo $ukuran_stok;?>"
                                                 required />
                                             </td>
                                             <td>
-                                                <input type="text" class="form-control" name="jumlah_stok"
+                                                <input type="text" class="form-control text-center" name="jumlah_stok" value="<?php echo $jumlah_stok;?>"
                                                 required />
                                             </td>
                                             <td><button type="submit" class="btn btn-primary">Apdet</button></td> 
