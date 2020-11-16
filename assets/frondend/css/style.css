@@ -22,11 +22,10 @@ a:focus {
 	text-decoration: none;
 }
 
-#heri {
-	width: 100%;
-	background: url("../../slider/hero-desktop.jpg") center top no-repeat;
-	background-size: cover;
-}
+/* .bg{
+	background: url('assets/frondend/img/bg.png') center top / 100% no-repeat; min-width: 1200px;
+	padding-bottom: 0px; margin: 0px auto 4.375rem; width: 100%;
+} */
 
 p {
 	padding: 0;
@@ -46,7 +45,7 @@ h6 {
 }
 
 .scroller {
-	max-height: 180px;
+	max-height: 200px;
 	border: 0px solid transparent;
 	display: flex;
 	overflow-x: auto;

@@ -149,48 +149,6 @@
 
                             </ul>
                         </li>
-                        <li class="has_sub">
-                            <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-clipboard-text"></i>
-                                <span> Metode Pembayaran </span> <span class="menu-arrow float-right"><i
-                                        class="mdi mdi-chevron-right"></i></span></a>
-                            <ul class="list-unstyled">
-                                <li>
-                                    <a href="<?php echo base_url('admin/artikel/buat_artikel') ?>" class="waves-effect">
-                                        <i class="fa fa-edit"></i>
-                                        <span class="ml-2">Metode Pembayaran</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="<?php echo base_url('admin/artikel/data_artikel') ?>" class="waves-effect">
-                                        <i class="fa fa-clipboard"></i>
-                                        <span class="ml-2">Settings</span>
-                                    </a>
-                                </li>
-                                
-
-                            </ul>
-                        </li>
-                        <li class="has_sub">
-                            <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-clipboard-text"></i>
-                                <span> Metode Pengiriman </span> <span class="menu-arrow float-right"><i
-                                        class="mdi mdi-chevron-right"></i></span></a>
-                            <ul class="list-unstyled">
-                                <li>
-                                    <a href="<?php echo base_url('admin/Rajong') ?>" class="waves-effect">
-                                        <i class="fa fa-edit"></i>
-                                        <span class="ml-2"> Raja Ongkir</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="<?php echo base_url('admin/artikel/data_artikel') ?>" class="waves-effect">
-                                        <i class="fa fa-clipboard"></i>
-                                        <span class="ml-2">Tracking Barang</span>
-                                    </a>
-                                </li>
-                                
-
-                            </ul>
-                        </li>
 
                         <li>
                             <a href="<?php echo base_url('admin/member') ?>" class="waves-effect">
@@ -198,13 +156,6 @@
                                 <span> Data Member </span>
                             </a>
                         </li>
-
-                        <!-- <li>
-                            <a href="<?php echo base_url('slider') ?>" class="waves-effect">
-                                <i class="mdi mdi-account-multiple"></i>
-                                <span> Atur Slider </span>
-                            </a>
-                        </li> -->
 
                         <li>
                             <a href="<?php echo base_url('admin/rangking') ?>" class="waves-effect">

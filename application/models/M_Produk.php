@@ -18,9 +18,25 @@ class M_produk extends CI_Model{
         return $this->db->get('kategori');
     }
 
+    function get_detil_produk($id_produk) //tampil detil produk page
+    {
+        $this->db->from('produk');
+        $this->db->join('stok', 'stok.id_produk=produk.id_produk');
+        $detil = $this->db->where('produk.id_produk', $id_produk)->get();
+        if ($detil->num_rows()>0){
+            return $detil->result();
+        }else {
+            return false;
+        }
+        
+        // $this->db->order_by('id_produk');
+        // $result = $this->db->get('produk',6,0);
+        // return $result;
+    }
+
     function get_produk_page() //tampil random produk page
     {
-        $this->db->order_by('id_produk', 'RANDOM');
+        $this->db->order_by('id_produk', 'DESC');
         $result = $this->db->get('produk',6,0);
         return $result;
     }

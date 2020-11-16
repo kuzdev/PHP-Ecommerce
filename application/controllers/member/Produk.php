@@ -20,13 +20,16 @@ class Produk extends CI_Controller
                 $this->load->view('member/templates/footer');
         }
         
-        function detail_produk($id)
+        function detail_produk($id_produk)
         {
-                $x['query'] = $this->m_produk-> get_detil_produk($id);
+                $x['detil'] = $this->m_produk->get_detil_produk($id_produk);
+                // print_r($x);
                 $this->load->view('member/templates/header');
-                $this->load->view('member/pages/v_detail-produk',$x);
+                $this->load->view('member/pages/v_detilProduk', $x);
                 $this->load->view('member/templates/footer');
         }
+
+      
 
 
       
